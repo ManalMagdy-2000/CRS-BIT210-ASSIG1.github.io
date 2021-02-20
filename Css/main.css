@@ -1,0 +1,153 @@
+
+/* nav bar */
+a.navbar-brand{
+    color: white;
+    font-family: Monospace;
+    font-size: 25px;
+    margin-left: 100px;
+}
+.navbar-brand:hover{
+    color: white;
+}
+.navbar-brand span{
+    color:#78f040 ;
+}
+
+a.nav-link {
+    color: white;
+    margin: 16px 30px 16px 30px;
+}
+a.nav-link:hover{
+    color:#78f040 ;
+}
+
+div.logInSignUp{
+    display: inline-block;
+    margin:22px 30px 5px 50px;
+}
+a.logIn,a.signUp{
+    color: white;
+}
+a.logIn:hover,a.signUp:hover{
+    color: #78f040;
+    text-decoration: none;
+}
+.vertical-symbol{
+    color:#78f040  ;
+}
+.navbar-toggler-icon{
+    color: white;
+}
+button.navbar-toggler{
+    color: white;
+}
+
+/* end nav bar*/
+
+/*start slider*/
+.carousel-inner{
+    position: relative;
+    text-align: center;
+
+}
+.wallpaper-text{
+    position: absolute;
+    bottom: 180px;
+    left: 30px; 
+    color: white;
+    font-family:Monospace ;
+    font-size: 40px;
+
+}
+/*end slider*/
+/* start about section*/
+div.aboutUs{
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fdfdfde8;
+}
+div.aboutUs-section{
+    background-color: #f2efef;
+    overflow: hidden;
+    padding: 100px  50px;
+}
+/*end about section*
+
+/*-------------------------------------------Login------------------------------------*/
+.loginPage {
+    background-color: #a1ef7a;
+
+}
+
+.loginPage .container {
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+	overflow: hidden;
+	width: 400px;
+    max-width: 100%;
+    margin-top: 120px;
+}
+
+.loginPage .header {
+	border-bottom: 1px solid #f0f0f0;
+	padding: 20px 40px;
+}
+
+.loginPage .header h2 {
+    margin: 0;
+    font-weight: bold;
+}
+
+.loginPage .form {
+	padding: 30px 40px;	
+}
+
+.loginPage .form-control {
+	margin-bottom: 10px;
+	padding-bottom: 20px;
+    position: relative;
+    border: none;
+}
+
+.loginPage .form-control label {
+	display: inline-block;
+	margin-bottom: 5px;
+}
+/*--------------input-------------*/
+.loginPage .form-control input {
+	border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	display: block;
+	font-family: inherit;
+	font-size: 14px;
+	padding: 10px;
+	width: 100%;
+}
+
+
+
+/* submit button */
+
+.loginPage .form button {
+	background-color: #a1ef7a;
+	border: 2px solid #a1ef7a;
+	border-radius: 4px;
+	color: #fff;
+	display: block;
+	font-family: inherit;
+	font-size: 16px;
+	padding: 10px;
+	margin-top: 20px;
+	width: 100%;
+}
+/*----------------------------------------------end login--------------------------------*/
+
+
+
+
+
+
+
