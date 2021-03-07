@@ -9,27 +9,26 @@
     <link rel="stylesheet" href="Css\main.css">
 
 </head>
-<body>
+<body class>
     <!--start Nav bar-->
-    <nav class="navbar navbar-expand-lg  bg-dark">
+    <nav id="navbar" class="navbar navbar-expand-lg  bg-dark">
       <a class="navbar-brand" href="index.html">Crisis<span>Clutch</span></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-      </button>
-    
+      </button> 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
             <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#AboutUs">About</a>
+            <a class="nav-link" href="#aboutUs">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#Services">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#contactUs">Contact</a>
           </li>
           <div class="logInSignUp">
             <a href="logIn.html" class="logIn">LogIn</a>
@@ -58,39 +57,59 @@
       </div>
     </div>
      <!--end slider-->
-     <!-- start About us -->
-<!-- Container (About Section) -->
-<div class="container-fluid">
-  <div class="row">
-    <div class="">
-      <h2>About Company Page</h2>    
-      <br>
-      <p>Crisis Relief Services (CRS) is an NGO (Non-Government Organization) that aims to help people who are facing crises arising  from natural disasters such as flood and earthquakes , our mission is to 
+
+</section>
+<a name="aboutUs" ></a>
+<div class="col-lg-12">
+  <div class="about">
+    <div class="inner-section">
+      <h1>About Us</h1>
+      <p class="text">Crisis Relief Services (CRS) is an NGO (Non-Government Organization) 
+        that aims to help people who are facing crises arising  from natural disasters
+         such as flood and earthquakes , our mission is to 
         -engage the local population and corporate organizations in response to disasters.
         -Train local volunteers and partners in disaster management and
-        -Promote disaster risk reduction among vulnerable communities.</p>
+        -Promote disaster risk reduction among vulnerable communities.
+      </p>
+      <div class="skills">
+        <button onclick="window.location.href='/#contactUs'">Contact Us</button>
+      </div>
     </div>
   </div>
 </div>
-
-          <!--end About us -->
-     <!--
+<!-------------------------------------start contact form-------------->
+<a name="contactUs" ></a>
+<div class="container contact-form">
+  <div class="contact-image">
+      <img src="Images/rocket.png" alt="rocket_contact"/>
+  </div>
+  <form method="post">
+      <h3>Drop Us a Message</h3>
      <div class="row">
-      <div class="col-md-4 col-md-4 col-md-4">
-       <div class="aboutUs-section">
-         <h2> <span>About </span>Crisis Cluch </h2>
-         <p class="text">
-          Crisis Relief Services (CRS) is an NGO (Non-Government Organization) that aims to help people who are facing crises arising  from natural disasters such as flood and earthquakes , our mission is to 
-         -Engage the local population and corporate organizations in response to disasters.
-         -Train local volunteers and partners in disaster management and
-         -Promote disaster risk reduction among vulnerable communities.
-        </p>
-        </div>
+          <div class="col-md-6">
+              <div class="form-group">
+                  <input type="text" name="txtName" class="form-control" placeholder="Your Name *" value="" />
+              </div>
+              <div class="form-group">
+                  <input type="text" name="txtEmail" class="form-control" placeholder="Your Email *" value="" />
+              </div>
+              <div class="form-group">
+                  <input type="text" name="txtPhone" class="form-control" placeholder="Your Phone Number *" value="" />
+              </div>
+              <div class="form-group">
+                  <input type="submit" name="btnSubmit" class="btnContact" value="Send Message" />
+              </div>
+          </div>
+          <div class="col-md-6">
+              <div class="form-group">
+                  <textarea name="txtMsg" class="form-control" placeholder="Your Message *" style="width: 100%; height: 150px;"></textarea>
+              </div>
+          </div>
       </div>
-     </div>
-     -->
-     <!-- Container (services Section) -->
-     <a name ="Services"></a>
+  </form>
+</div>
+<!-------------------------------------End contact form-------------->
+<a name ="Services"></a>
 <div class="container-fluid text-center bg-grey">
   <h2>Services</h2><br>
   <div class="row text-center">
@@ -166,12 +185,7 @@
   <!-- Copyright -->
 </footer>
 <!--End footer-->
-
-
-
-  
-
-
+    <script src="jS/jS.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
