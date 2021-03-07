@@ -11,7 +11,7 @@
 <body class="loginPage">
  
      <!--start Nav bar-->
-     <nav class="navbar navbar-expand-lg  bg-dark">
+     <nav id="navbar" class="navbar navbar-expand-lg  bg-dark">
         <a class="navbar-brand" href="index.html">Crisis<span>Clutch</span></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -34,7 +34,7 @@
             <div class="logInSignUp">
               <a href="logIn.html" class="logIn">LogIn</a>
               <span class="vertical-symbol">|</span>
-              <a href="#" class="signUp">SignUp</a>
+              <a href="signUp.html" class="signUp">SignUp</a>
             </div>
           </ul>
         </div>
@@ -45,32 +45,34 @@
         <div class="header">
             <h2>LogIn</h2>
         </div>
-        <form id="form" class="form">
+        <form id="form" class="form" action="#">
             <div class="form-control">
                 <label for="username">Username</label>
-                <input type="text" placeholder="Manal10_volunteer" id="username" />
+                <input type="text"  name='username' id="username" placeholder="Manal10_volunteer" required  />
             </div>
             <div class="form-control">
                 <label for="password">Password</label>
-                <input type="password" placeholder="Password" id="password"/>
+                <input type="password" placeholder="Password" id="password_login" 
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+                    title="Must contain at least one number and one uppercase and lowercase letter,
+                     and at least 8 or more characters" required/>
             </div>
-            <button>Submit</button>
+            <div class="form-check mb-2 mr-sm-2">
+              <input class="form-check-input" type="checkbox" id="inlineFormCheck">
+              <label class="form-check-label" for="inlineFormCheck">
+                Remember me
+              </label>
+            </div>
+            <input class="btn" type="submit"  name="logIn" value="LogIn" onclick="redirect(event)"></input>
+            <p class="noAccount"> no account? <a href="signUp.html" class="registerLink"> Register here</a></p>
         </form>
+        
     </div>
+
   
       <!--End form-->
 
-
-      
-      
-
-
-
-
-
-
-
-
-</body>
+<p class="copyright">&copy;2021CRSClutch</p>
+<script src="Js/jS.js"></script>
 </body>
 </html>

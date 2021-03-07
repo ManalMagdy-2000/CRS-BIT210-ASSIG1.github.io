@@ -1,5 +1,22 @@
 
+body{
+    background-color: whitesmoke;
+}
 /* nav bar */
+/* to make your navigation bar sticky*/
+.navbar{
+    /* fixed keyword is fine too */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    /* z-index works pretty much like a layer:
+    the higher the z-index value, the greater
+    it will allow the navigation tag to stay on top
+    of other tags */
+ }
+ .button.navbar.toggler{
+     color: turquoise;
+ }
 a.navbar-brand{
     color: white;
     font-family: Monospace;
@@ -41,6 +58,16 @@ a.logIn:hover,a.signUp:hover{
 button.navbar-toggler{
     color: white;
 }
+/*--copy right--*/
+.copyright{
+    color:white;
+    margin: 150px 0px 100px 700px;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
 
 /* end nav bar*/
 
@@ -60,28 +87,156 @@ button.navbar-toggler{
 
 }
 /*end slider*/
-/* start about section*/
-div.aboutUs{
-    min-height: 70vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #fdfdfde8;
+.rowContact{
+    margin-right: 0;
+    margin-left: 280px;
 }
-div.aboutUs-section{
-    background-color: #f2efef;
+/*---------------------------start about us section -----------*/
+.about{
+    background: url(/Images/flood.jpg) no-repeat;
+    background-size: 55%;
+    background-color: #fdfdfd;
     overflow: hidden;
-    padding: 100px  50px;
+    padding: 100px 0;
 }
-/*end about section*
+.inner-section{
+    width: 55%;
+    float: right;
+    background-color: #fdfdfd;
+    padding: 100px;
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3);
+}
+.inner-section h1{
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900px;
+}
+.text{
+    font-size: 13px;
+    color: #545454;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+.skills button{
+    font-size: 22px;
+    text-align: center;
+    letter-spacing:2px;
+    border: none;
+    border-radius: 20px;
+    padding: 8px;
+    width: 200px;
+    background-color:#a1ef7a;
+    color: white;
+    cursor: pointer;
+}
+.skills button:hover{
+    transition: 1s;
+    background-color: #ecf5f5;
+    color: #a1ef7a;
+}
+.about{
+    margin-top: 8%;
+}
+@media screen and (max-width:1200px){
+    .inner-section{
+        padding: 80px;
+    }
+}
+@media screen and (max-width:1000px){
+    .about{
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+    .inner-section{
+        width:100%;
+    }
+}
+@media sreen and(max-width:600px){
+    .about{
+        padding: 0;
+    }
+    .inner-section{
+        padding: 60px;
+    }
+    .skills button{
+        font-size: 19px;
+        padding: 5px;
+        width: 160px;
+    }
+}
+/*-----------------------------------End about us section---------------*/
+/*----------------------------start contact form--------------------------*/
+.contact-form{
+    background: #fff;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    width: 70%;
+}
+.contact-form .form-control{
+    border-radius:1rem;
+}
+.contact-image{
+    text-align: center;
+}
+.contact-image img{
+    border-radius: 6rem;
+    width: 11%;
+    margin-top: -3%;
+    transform: rotate(29deg);
+}
+.contact-form form{
+    padding: 14%;
+}
+.contact-form form .row{
+    margin-bottom: -7%;
+}
+.contact-form h3{
+    margin-bottom: 8%;
+    margin-top: -10%;
+    text-align: center;
+    color: #a1ef7a;
+}
+.contact-form .btnContact {
+    width: 50%;
+    border: none;
+    border-radius: 1rem;
+    padding: 1.5%;
+    background: #ffce49;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+}
+.btnContactSubmit
+{
+    width: 50%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+/*----------------------------------End contact Form------------------*/
+/*---------------------------end about us section -----------*/
 
+/*--------------------------start services section---------------*/
+.container-fluid{
+    background-color: white;
+    margin-top: 15%;
+}
+/*--------------------------end services section--------------------*/
+/*----------------------------------------start footer---------------------*/
+footer{
+    margin-top: 10%;
+}
+/*----------------------------------------End footer---------------------*/
 /*-------------------------------------------Login------------------------------------*/
-.loginPage {
+.loginPage ,.signUpPage ,.managerPage , .manageProfile {
     background-color: #a1ef7a;
 
 }
 
-.loginPage .container {
+.loginPage .container{
 	background-color: #fff;
 	border-radius: 5px;
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
@@ -91,33 +246,35 @@ div.aboutUs-section{
     margin-top: 120px;
 }
 
-.loginPage .header {
+.loginPage .header ,.signUpPage .header , .managerPage .header , .manageProfile .header{
 	border-bottom: 1px solid #f0f0f0;
 	padding: 20px 40px;
 }
 
-.loginPage .header h2 {
+.loginPage .header h2 ,.signUpPage .header h2  , .managerPage .header h2 , .manageProfile .header h2{
     margin: 0;
     font-weight: bold;
 }
 
-.loginPage .form {
+.loginPage .form , .signUpPage .form , .managerPage .form , .manageProfile .form {
 	padding: 30px 40px;	
 }
 
-.loginPage .form-control {
+.loginPage .form-control ,.signUpPage .form-control , .managerPage .form-control,.manageProfile .form-control{
 	margin-bottom: 10px;
 	padding-bottom: 20px;
     position: relative;
     border: none;
 }
 
-.loginPage .form-control label {
+.loginPage .form-control label  ,.signUpPage .form-control label , .managerPage .form-control label
+,.manageProfile .form-control label{
 	display: inline-block;
 	margin-bottom: 5px;
 }
 /*--------------input-------------*/
-.loginPage .form-control input {
+.loginPage .form-control input ,.signUpPage .form-control input ,.managerPage .form-control input
+,.manageProfile .form-control input {
 	border: 2px solid #f0f0f0;
 	border-radius: 4px;
 	display: block;
@@ -131,7 +288,7 @@ div.aboutUs-section{
 
 /* submit button */
 
-.loginPage .form button {
+.loginPage .form .btn , .signUpPage .form .btn,.managerPage .form .btn ,.manageProfile .form .btn{
 	background-color: #a1ef7a;
 	border: 2px solid #a1ef7a;
 	border-radius: 4px;
@@ -143,11 +300,269 @@ div.aboutUs-section{
 	margin-top: 20px;
 	width: 100%;
 }
+.registerLink{
+    color:#77ec40;
+   
+}
+.registerLink:hover{
+    color: #a1ef7a;;
+}
+.noAccount{
+    margin-top: 10px;
+}
+
+
 /*----------------------------------------------end login--------------------------------*/
+/*--------------------------------------Sign up -------------------------------------------*/
+.signUpPage .container , .managerPage .container , .manageProfile{
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+	width: 600px;
+    max-width: 100%;
+    margin-top: 120px;
+}
+input#male{
+    margin-left: 10px;
+}
+input#female{
+    margin-left: 50px;
+}
+input#male,input#female{
+    margin-bottom: 30px;
+}
+
+/*------------------------------------End sign up---------------------------------------*/
+/*------------start services section----------------*/
+.card{
+    margin-left: 78px;
+    display: inline-block;
+    width: 25rem;
+
+}
+div.services-section{
+    background-color: #f6f6f6;
+}
+
+/*------------End services section----------------*/
+@media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+      
+    }
+}
+/*-------------------Start Manager Page----------------*/
+/* staff list table*/  staffList
+#staffList {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #staffList td, #staffList th {
+    border: 1px solid #ddd;
+    padding: 20px;
+  }
+  
+  #staffList tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #staffList tr:hover {background-color: #ddd;}
+  
+  #staffList th {
+    padding: 20px 30px;
+    text-align: left;
+    background-color: #a1ef7a;
+    color: white;
+  }
+  .managerPage{
+    background-color: #f6f6f6;
+}
+#staffList{
+    margin: 60px 0px 500px 350px;
+}
 
 
+  /*-------------------End Manager Page----------------*/
+  /*------------------------start staff page------------*/
+  #ui{
+      background-color: #333;
+      padding: 50px;
+      margin-top: 50px;
+      opacity: 0.9;
+  }
 
+  #ui label{
+      color: #fff;
+      margin-top:30px;
+  }
+  #country{
+      margin-bottom: 30px;
+      bottom:100%; 
+  }
+  #crisisTypes{
+      margin-left: 80px;
+  }
+  textarea{
+    margin-bottom: 60px;
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  .btn-primary{
+      background-color: #a1ef7a;
+      border:none;
+  }
+  .btn-primary:hover{
+      opacity: 0.8;
+      background-color: #a1ef7a;
+  }
+  .btn-primary:active{
+      background-color:yellow;
+      border: none;
+  }
+  
 
+    /*----------------------End staff page------------*/
+    /*---------------------start manage volunteer profile ------------*/
+ /*start image file*/
+.wrapper{
+    height: 200px;
+    width: 200px;
+    position: relative;
+    border:5px solid #fff;
+    border-radius: 50%;
+    background-image: url(/Images/profile-pic.jpg);    
+    background-size: 100% 100%;
+    margin: auto;
+    margin-top: 80px;
+    overflow: hidden;
+}
+.imageFile{
+    position: absolute;
+    bottom: 0;
+    outline: none;
+    color: transparent;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1px 100px;
+    cursor: pointer;
+    transition: 0.5s;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+}
+.imageFile::-webkit-file-upload-button{ /* to hide choose file input*/
+    visibility: hidden;
+}
+.imageFile::before{
+    content: '\f030 ';
+    font-family:fontAwesome;
+    font-size: 30px;
+    color: #fff;
+    display: inline-block;
+    -webkit-user-select: none;
+}
+.imageFile::after{
+    content: 'update';
+    font-family: 'arial';
+    font-weight: bold;
+    color: #fff;
+    display: block;
+    top: 75px;
+    font-size: 14px;
+    position: absolute;
+}
+.imageFile:hover{
+    opacity: 1;
+}
+/*End image file*/
+/*start form*/
+.manageVolunteerProfile{
+    background-color: #fff;
+    padding: 50px;
+    margin-top: 50px;
+    opacity: 0.9;
+    border-radius:30px;
+}
+.bodymanageProfile{
+    background-color: #cbefb8;
+}
+#pManageProfile{
+    margin-right: 30px;
+}
+.bodymanageProfile button ,.bodymanageProfile input{
+    border: none;
+}
+#docBtn{
+    margin-left: 65px;
+}
+#docBtnPassport , #docBtn{
+    margin-top: 10px;
+}
+#none {
+    margin-left: 40px;
+}
+#attachDoc{
+   
+    font-size: 13px;
+    font-family: cursive;
+    background: white;
+    border-radius: 50px;
+    box-shadow: 3px 3px 6px #a1ef7a;
+    width: 400px;
+    height:28px;
+    outline: none;
+    margin-top: 10px ;
+    margin-bottom: 30px;
+}
+#attachDoc::-webkit-file-upload-button{
+    color: white;
+    background:  #a1ef7a;
+    padding: 5px;
+    border: none;
+    border-radius: 50px;
+    outline: none;
+}
+#manageSubmitBtn{
+    width: 100%;
+    background-color: #a1ef7a;
+    color:#fff;
+}
+#manageSubmitBtn:hover{
+    opacity: 0.7;
+}
+/*end form*/
+    /*---------------------end manage volunteer Profile ------------*/
+/*---------------------------------start volunteer home page ------------*/
+.carousel-item  .btn {
+    position: absolute;
+    top: 60%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color:#78f040;
+    color: white;
+    font-size: 25px;
+    padding: 20px 35px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    font-family: cursive;
+  }
+  
+  .carousel-item  .btn:hover {
+    background-color: #ffce49;
+  }
+/*---------------------------------------End volunteer home Page----------*/
+/*--------------------------------start apply for trip page---------------*/
+.volunteerPage{
+    background-color: white;
+}
+.volunteerPage .card{
+    top:20%;
+}
+#tripBtn :active , #tripBtn:hover{
+background-color:#ffce49;
+}
 
-
-
+/*--------------------------------end apply for trip page------------------*/
