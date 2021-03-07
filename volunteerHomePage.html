@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="Css\main.css">
+
+</head>
+<body class>
+    <!--start Nav bar-->
+    <nav id="navbar" class="navbar navbar-expand-lg  bg-dark">
+      <a class="navbar-brand" href="index.html">Crisis<span>Clutch</span></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button> 
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="volunteerHomePage.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="volunteer.html">My Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#aboutUs">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contactUs">Contact</a>
+          </li>
+          <div class="logInSignUp">
+            <span class="vertical-symbol">|</span>
+            <a href="index.html" class="signUp">Logout</a>
+          </div>
+        </ul>
+      </div>
+    </nav>
+    <!--end Nav bar-->
+    <!--start slider-->
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-140" src="Images/wallpaper.jpg" alt="First slide">
+            <button class="btn" onclick="window.location.href='/applyTrip.html'">Apply for a trip</button>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-140" src="Images/wallpaper2.png" alt="Second slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-140" src="Images/wallpaper3.png" alt="Third slide">
+        </div>
+      </div>
+    </div>
+     <!--end slider-->
+
+</section>
+<a name="aboutUs" ></a>
+<div class="col-lg-12">
+  <div class="about">
+    <div class="inner-section">
+      <h1>About Us</h1>
+      <p class="text">Crisis Relief Services (CRS) is an NGO (Non-Government Organization) 
+        that aims to help people who are facing crises arising  from natural disasters
+         such as flood and earthquakes , our mission is to 
+        -engage the local population and corporate organizations in response to disasters.
+        -Train local volunteers and partners in disaster management and
+        -Promote disaster risk reduction among vulnerable communities.
+      </p>
+      <div class="skills">
+        <button onclick="window.location.href='/#contactUs'">Contact Us</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-------------------------------------start contact form-------------->
+<a name="contactUs" ></a>
+<div class="container contact-form">
+  <div class="contact-image">
+      <img src="Images/rocket.png" alt="rocket_contact"/>
+  </div>
+  <form method="post">
+      <h3>Drop Us a Message</h3>
+     <div class="row">
+          <div class="col-md-6">
+              <div class="form-group">
+                  <input type="text" name="txtName" class="form-control" placeholder="Your Name *" value="" />
+              </div>
+              <div class="form-group">
+                  <input type="text" name="txtEmail" class="form-control" placeholder="Your Email *" value="" />
+              </div>
+              <div class="form-group">
+                  <input type="text" name="txtPhone" class="form-control" placeholder="Your Phone Number *" value="" />
+              </div>
+              <div class="form-group">
+                  <input type="submit" name="btnSubmit" class="btnContact" value="Send Message" />
+              </div>
+          </div>
+          <div class="col-md-6">
+              <div class="form-group">
+                  <textarea name="txtMsg" class="form-control" placeholder="Your Message *" style="width: 100%; height: 150px;"></textarea>
+              </div>
+          </div>
+      </div>
+  </form>
+</div>
+<!-------------------------------------End contact form-------------->
+<a name ="Services"></a>
+<div class="container-fluid text-center bg-grey">
+  <h2>Services</h2><br>
+  <div class="row text-center">
+    <div class="col-sm-4">
+      <div class="services-section">
+        <img src="Images/serv-flood.jpg" alt="service 1" width="400" height="300">
+        <p><strong>Service 1</strong></p>
+        <p>natural disasters (flooding)</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="services-section">
+        <img src="Images/serv-earth.jpeg" alt="service 2" width="400" height="300">
+        <p><strong>Service 2</strong></p>
+        <p>We built New York</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="services-section">
+        <img src="Images/serv-earth.jpeg" alt="service 3" width="400" height="300">
+        <p><strong>Service 3</strong></p>
+        <p>Yes, San Fran is ours</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- start footer-->
+<footer class="bg-dark text-center text-white">
+  <!-- Grid container -->
+  <div class="container p-4 pb-0">
+    <!-- Section: Form -->
+    <section class="">
+      <form action="">
+        <!--Grid row-->
+        <div class="row d-flex justify-content-center">
+          <!--Grid column-->
+          <div class="col-auto">
+            <p class="pt-2">
+              <strong>Sign up for our newsletter</strong>
+            </p>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-5 col-12">
+            <!-- Email input -->
+            <div class="form-outline form-white mb-4">
+              <input type="email" id="form5Example2" class="form-control" placeholder="Email address.." />
+            </div>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-auto">
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-outline-light mb-4">
+              Subscribe
+            </button>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </form>
+    </section>
+    <!-- Section: Form -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    &copy;2021CRSClutch
+  </div>
+  <!-- Copyright -->
+</footer>
+<!--End footer-->
+    <script src="jS/jS.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
