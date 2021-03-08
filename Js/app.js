@@ -1,3 +1,7 @@
+/*
+* Name: Manal Magdy
+* ID: B1901825
+*/
 var app1 = document.getElementById("appBtn1");
 var app2 = document.getElementById("appBtn2");
 var app3 = document.getElementById("appBtn3");

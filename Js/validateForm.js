@@ -1,3 +1,7 @@
+/*
+* Name: Manal Magdy
+* ID: B1901825
+*/
 function validateFullName() {
     var x = document.forms["signUpForm"]["fullName"].value;
     if (x == "") {

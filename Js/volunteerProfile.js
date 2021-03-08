@@ -1,3 +1,7 @@
+/*
+* Name: Manal Magdy
+* ID: B1901825
+*/
 function selectExpiryDate() {
     // Get the radius button
     var radiusBtn = document.getElementById("selectDate");

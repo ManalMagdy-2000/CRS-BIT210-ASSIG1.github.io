@@ -1,3 +1,7 @@
+/*
+* Name: Manal Magdy
+* ID: B1901825
+*/
 let status;
 var joinTrip1 = document.getElementById("tripBtn1");
 var joinTrip2 = document.getElementById("tripBtn2");

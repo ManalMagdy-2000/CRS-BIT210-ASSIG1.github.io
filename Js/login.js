@@ -1,3 +1,7 @@
+/*
+* Name: Manal Magdy
+* ID: B1901825
+*/
 function redirect(e){   
     e.preventDefault();
     console.log(document.getElementById("username").value);

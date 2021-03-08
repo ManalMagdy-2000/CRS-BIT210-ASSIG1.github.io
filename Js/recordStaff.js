@@ -1,3 +1,7 @@
+/*
+* Name: Manal Magdy
+* ID: B1901825
+*/
 var recordStaff =document.getElementById("recordStaff");
 recordStaff.addEventListener("click" , displayStaffDetails);
 var  row = 1;  // to keep track of how many rows 
