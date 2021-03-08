@@ -13,22 +13,6 @@ function myFunction() {
     navbar.classList.remove("sticky");
   }
 }*/
-/*-------------------------login page----------------------- */
-function redirect(e){   
-    e.preventDefault();
-    console.log(document.getElementById("username").value);
-    var name = document.getElementById("username").value;
-
-    if(name.includes("_manager")){
-        window.location.href = "manager.html";
-    }else if(name.includes("_staff")){
-        window.location.href = "staff.html";
-    }
-    else if(name.includes("_volunteer")){
-        window.location.href = "volunteerHomePage.html";
-    }
-
- }
 
  /*----------------------------------------------Validation----------------------*/
  //password validation
@@ -61,27 +45,11 @@ function validateForm() {
     }
   }*/
   /*--------------------------------End Validation--------------------------*/
-  /*-------------------------------start (record staff)--------------------*/
+/*----------------------organize trip--------------------*/
+ 
 
-  /*-----------------------------start volunteer page -----------------*/
-  function selectExpiryDate() {
-    // Get the radius button
-    var radiusBtn = document.getElementById("selectDate");
-    // Get date button
-    var text = document.getElementById("dateBtn");
-    // If the radius button  is checked, display the date input
-    if (radiusBtn.checked == true){
-       dateBtn.style.display = "block";
-    } else {
-      dateBtn.style.display = "none";
-    }
-  }
-  // update button
-  var b = document.getElementById("manageSubmitBtn");
-  b.addEventListener("click", updateProfile);
-  function updateProfile(ev){
-    ev.preventDefault();
-    alert("your account succefully updated!");
-  }
+
+
+
 
 
