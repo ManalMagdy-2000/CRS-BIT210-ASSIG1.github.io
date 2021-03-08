@@ -19,10 +19,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Organize Trip <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="staff.html">Organize Trip <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Manage Application<span class="sr-only"></span></a>
+                    <a class="nav-link" href="manageApplication.html">Manage Application<span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="viewApplication.html">View Applications<span class="sr-only"></span></a>
                 </li>
                 <div class="logInSignUp">
                     <span class="vertical-symbol">|</span>
@@ -39,7 +42,7 @@
             <div class="col-lg-6">
                 <div id="ui">
                     <div class="form-group">
-                    <form class="organizeForm" >
+                    <form class="organizeForm" id="organizeForm" method="POST">
                         <div class="row">
 
                             <div class="col-lg-6">
@@ -51,17 +54,19 @@
                                 <!--Enter any number of volunteers from 1 to 20-->
                                 <input type="number" name="volunteerNum" class="form-control" min="1" max="20">
                             </div>
-                            <div class="col-lg-12" >
+                            <div class="col-lg-6" >
+                                
                                 <label >
-                                    <input type="radio">
+                                    <h6>Crisis Type</h6>
+                                    <input type="radio" name='docBtn' id="docBtn" >
                                     FLOOD
                                 </label>
                                 <label>
-                                    <input type="radio" id="crisisTypes">
+                                    <input type="radio" name='docBtn' id="docBtn"  >
                                      EARTHQUAKE
                                 </label>
                                 <label>
-                                    <input type="radio" id="crisisTypes">
+                                    <input type="radio" name='docBtn' id="docBtn" >
                                     WILDFIRE
                                 </label>                            
                           </div>
@@ -81,7 +86,7 @@
                         </div>
                         <div class="col-lg-12">
                             <textarea name="tripDescription"rows="6" cols="58" placeholder="Enter trip description here ..."></textarea>
-                            <button type="button" class="btn btn-primary btn-md btn-block " >Save</button>  
+                            <button class="btn btn-primary btn-md btn-block" >Save</button>  
                         </div>             
                   </div>
                 </form>
@@ -97,6 +102,6 @@
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<script src="Js/jS.js"></script>
+
 </body>
 </html>
