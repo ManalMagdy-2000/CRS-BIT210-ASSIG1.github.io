@@ -386,7 +386,7 @@ div.services-section{
   /*-------------------End Manager Page----------------*/
   /*------------------------start staff page------------*/
   #ui{
-      background-color: #333;
+      background-color: #343a40;
       padding: 50px;
       margin-top: 50px;
       opacity: 0.9;
@@ -554,15 +554,82 @@ div.services-section{
     background-color: #ffce49;
   }
 /*---------------------------------------End volunteer home Page----------*/
-/*--------------------------------start apply for trip page---------------*/
+/*--------------------------------start apply for trip and app page---------------*/
 .volunteerPage{
     background-color: white;
 }
 .volunteerPage .card{
     top:20%;
 }
-#tripBtn :active , #tripBtn:hover{
+#tripBtn1:active,#tripBtn1:hover ,#tripBtn2:active,#tripBtn2:hover ,#tripBtn3:active,#tripBtn3:hover ,
+#tripBtn4:active,#tripBtn4:hover ,#tripBtn5:active,#tripBtn5:hover ,#tripBtn6:active,#tripBtn6:hover {
 background-color:#ffce49;
 }
+#appBtn1:active , #appBtn1:hover,#appBtn2:active , #appBtn2:hover,#appBtn3:active , #appBtn3:hover,#appBtn4:active 
+, #appBtn4:hover,#appBtn5:active , #appBtn5:hover,#appBtn6:active , #appBtn6:hover{
+    background-color:#ffce49;
+}
 
-/*--------------------------------end apply for trip page------------------*/
+/*--------------------------------end apply for trip and app page------------------*/
+/*-------------------------------form------------------------------*/
+#applyTripForm,#managApplicationForm{
+    margin-right:10%;
+}
+#managApplicationForm{
+    margin-top: 8%;
+}
+/*----------------------------view application------------*/
+#myInput {
+    background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+    background-position: 10px 12px; 
+    background-repeat: no-repeat;
+    width: 100%; 
+    font-size: 16px; 
+    padding: 12px 20px 12px 40px; 
+    border: 1px solid #78f040; 
+    margin-bottom: 12px; 
+  }
+  
+  #myTable {
+    border-collapse: collapse; 
+    width: 100% ; 
+    border: 1px solid #78f040; 
+    font-size: 18px; 
+  }
+  
+  #myTable th, #myTable td {
+    text-align: left;
+    padding: 18px 50px; 
+  }
+  
+  #myTable tr {
+    border-bottom: 1px solid #78f040;
+  }
+  
+  #myTable tr.header {
+    background-color:#a1ef7a;
+  }
+  th{
+      color: white;
+  }
+  #myTable tr:hover{
+      background-color: #d6f2c9;
+  }
+  @media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+	/* Force table to not be like tables anymore */
+	#myTable, tbody, th, td, tr { 
+		display: block; 
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+}
+
+/*-----------------------------Application status------------------*/

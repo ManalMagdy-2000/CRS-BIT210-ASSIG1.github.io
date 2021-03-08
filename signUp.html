@@ -45,14 +45,14 @@
         <div class="header">
             <h2>Sign Up</h2>
         </div>
-        <form id="form" class="form" action="#">
+        <form id="form" class="form" onsubmit="return validateForm()" method="post" name="signUpForm">
             <div class="form-control">
                 <label for="fullName">Full Name</label>
-                <input type="text"  name='fullName' id="fullName" placeholder="Rebecca smith" required  />
+                <input type="text"  name='fullName' id="fullName" placeholder="Rebecca smith" />
             </div>
             <div class="form-control">
                 <label for="username">Username</label>
-                <input type="text"  name='signUp_username' id="signUp_username" placeholder="Rebecca784" required  />
+                <input type="text"  name='signUp_username' id="signUp_username" placeholder="Rebecca784"   />
             </div>
  
               <input type="radio" id="male" name="gender" value="female">
@@ -62,7 +62,7 @@
           
             <div class="form-control">
                 <label for="phoneNo">Phone Number</label>
-                <input type="text"  name='phoneNo' id="phoneNo" placeholder="+601154548967" required  />
+                <input type="text"  name='phoneNo' id="phoneNo" placeholder="+601154548967" ondragleave="phonenumber()" />
             </div>
             <div class="form-control">
                 <label for="password1">Password</label>
@@ -73,14 +73,14 @@
             </div>
             <div class="form-control">
                 <label for="password2">Confirm Password</label>
-                <input type="password" placeholder="confirm Password" id="password2"  required/>
+                <input type="password" placeholder="confirm Password" id="password2" />
             </div>
  
-            <input class="btn" type="submit" name="submit" value="Sign Up"  onclick="" ></input>
+            <input class="btn" type="submit" name="fullName" value="Sign Up"  onclick="" ></input>
         </form>
     </div>
       <!--End form-->
       <p class="copyright">&copy;2021CRSClutch</p>
-<script src="Js/jS.js"></script>
+<script src="Js/validateForm.js"></script>
 </body>
 </html>
