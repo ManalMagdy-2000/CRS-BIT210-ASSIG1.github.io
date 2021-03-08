@@ -7,8 +7,9 @@ var joinTrip5 = document.getElementById("tripBtn5");
 var joinTrip6 = document.getElementById("tripBtn6");
 var joinTrip = [joinTrip1,joinTrip2,joinTrip3,joinTrip4,joinTrip5,joinTrip6];
 for(var i=0; i<joinTrip.length; i++){
-    joinTrip[i].addEventListener('click',function (){
+    joinTrip[i].addEventListener('click',function (ev){
         'use strict';
+        ev.preventDefault();
         var chars = '1234567890ABCDEFGHIJKLMNOPQRSTUVWYZabcdefghijklmnopqrstuvwxyz',
         idLength=8 ,
         randomID = '',
@@ -24,6 +25,8 @@ for(var i=0; i<joinTrip.length; i++){
     
     });
 }
+
+
 
 
 
