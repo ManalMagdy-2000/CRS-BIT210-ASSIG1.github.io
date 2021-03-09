@@ -93,7 +93,7 @@ button.navbar-toggler{
 }
 /*---------------------------start about us section -----------*/
 .about{
-    background: url(/Images/flood.jpg) no-repeat;
+    background: url(/Images/aboutUs.png) no-repeat;
     background-size: 55%;
     background-color: #fdfdfd;
     overflow: hidden;
@@ -435,7 +435,7 @@ div.services-section{
     position: relative;
     border:5px solid #fff;
     border-radius: 50%;
-    background-image: url(/Images/profile-pic.jpg);    
+    background-image: url(/Images/profilePic.jpg);    
     background-size: 100% 100%;
     margin: auto;
     margin-top: 80px;
