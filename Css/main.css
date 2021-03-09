@@ -93,7 +93,7 @@ button.navbar-toggler{
 }
 /*---------------------------start about us section -----------*/
 .about{
-    background: url(/Images/flood.JPG) no-repeat;
+    background: url(/Images/flood.jpg) no-repeat;
     background-size: 55%;
     background-color: #fdfdfd;
     overflow: hidden;
