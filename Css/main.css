@@ -1,4 +1,8 @@
 
+ /*
+* Name: Manal Magdy
+* ID: B1901825
+*/
 body{
     background-color: whitesmoke;
 }
@@ -51,6 +55,7 @@ a.logIn:hover,a.signUp:hover{
 }
 .vertical-symbol{
     color:#78f040  ;
+    margin-top: 26px;
 }
 .navbar-toggler-icon{
     color: white;
@@ -310,6 +315,9 @@ footer{
 .noAccount{
     margin-top: 10px;
 }
+.form-control small{
+    visibility: hidden;
+}
 
 
 /*----------------------------------------------end login--------------------------------*/
@@ -400,10 +408,7 @@ div.services-section{
       margin-bottom: 30px;
       bottom:100%; 
   }
- /*
-* Name: Manal Magdy
-* ID: B1901825
-*/
+
   #crisisTypes{
       margin-left: 80px;
   }
@@ -636,4 +641,17 @@ only screen and (max-width: 760px),
 	}
 }
 
-/*-----------------------------Application status------------------*/
+.loginPage .form-control.success input{
+    border:2px solid rgb(26, 167, 26);
+}
+.loginPage .form-control.error input{
+    border:2px solid rgb(228, 29, 22);
+}
+.loginPage .form-control small{
+    position:absolute;
+    margin: 3px;
+    visibility: hidden;
+}
+.loginPage .form-control{
+    padding-bottom: 15px;
+}
