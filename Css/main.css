@@ -655,3 +655,17 @@ only screen and (max-width: 760px),
 .loginPage .form-control{
     padding-bottom: 15px;
 }
+.signUpPage .form-control.success input{
+    border:2px solid rgb(26, 167, 26);
+}
+.signUpPage .form-control.error input{
+    border:2px solid rgb(228, 29, 22);
+}
+.signUpPage .form-control small{
+    position:absolute;
+    margin: 3px;
+    visibility: hidden;
+}
+.signUpPage .form-control{
+    padding-bottom: 15px;
+}

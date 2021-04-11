@@ -39,45 +39,47 @@
         <div class="header">
             <h2>Sign Up</h2>
         </div>
-        <form id="form" class="form" onsubmit="return validateForm()" method="post" name="signUpForm">
+        <form id="form" class="form">
             <div class="form-control">
                 <label for="fullName">Full Name</label>
                 <input type="text"  name='fullName' id="fullName" placeholder="Rebecca smith" />
+                <small id="logErr">Error message</small>
             </div>
             <div class="form-control">
                 <label for="username">Username</label>
-                <input type="text"  name='signUp_username' id="signUp_username" placeholder="Rebecca784"   />
+                <input type="text"  name='signUp_username' id="username" placeholder="Rebecca784"   />
+                <small id="logErr">Error message</small>
             </div>
  
-              <input type="radio" id="male" name="gender" value="female">
+              <input type="radio" id="male" name="gender" value="female" >
               <label for="male">Male</label>
               <input type="radio" id="female" name="gender" value="male">
               <label for="female">Female</label><br>
           
             <div class="form-control">
                 <label for="phoneNo">Phone Number</label>
-                <input type="text"  name='phoneNo' id="phoneNo" placeholder="+601154548967" ondragleave="phonenumber()" />
+                <input type="text"  name='phoneNo' id="phoneNo" placeholder="+601154548967" />
+                <small id="logErr">Error message</small>
             </div>
             <div class="form-control">
                 <label for="password1">Password</label>
-                <input type="password" placeholder="Password" id="password1" 
-                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
-                    title="Must contain at least one number and one uppercase and lowercase letter,
-                     and at least 8 or more characters" required/>
+                <input type="password" placeholder="Password" id="pwd" />
+                <small id="logErr">Error message</small>
             </div>
             <div class="form-control">
                 <label for="password2">Confirm Password</label>
-                <input type="password" placeholder="confirm Password" id="password2" />
+                <input type="password" placeholder="confirm Password" id="conpwd" />
+                <small id="logErr">Error message</small>
             </div>
  
-            <input class="btn" type="submit" name="fullName" value="Sign Up"  onclick="" ></input>
+            <button class="btn"  name="fullName" id="signBtn" >Sign Up</button>
         </form>
     </div>
       <!--End form-->
+      <script src="Js/signUp.js"></script>
       <p class="copyright" style="margin-left: 46%;">&copy;2021CRSClutch</p>
       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<script src="Js/validateForm.js"></script>
 </body>
 </html>

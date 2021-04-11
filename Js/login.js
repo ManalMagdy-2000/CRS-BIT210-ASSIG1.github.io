@@ -47,7 +47,8 @@ function onSuccess(input){
         window.location.href = "volunteerHomePage.html";
     }
     else{
-        onError(userName,"User Name not valid");
+        onError(userName,"Invalid");
+        alert("1. to login as a volunteer .\n       username_volunteer\n2. to login as a staff member.\n       username_staff\n3. to login as a manager\n     username_manager. ");
     } 
 }
 function onError(input,message){
